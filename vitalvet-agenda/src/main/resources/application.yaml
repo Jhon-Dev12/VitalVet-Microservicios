@@ -1,0 +1,23 @@
+server:
+  port: 8094
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/vitalvet_agenda?currentSchema=agenda
+    username: postgres
+    password: sql
+  messages:
+    basename: messages
+  application:
+    name: MICRO-AGENDA
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

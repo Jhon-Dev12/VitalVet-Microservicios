@@ -16,12 +16,12 @@ spring:
           uri: lb://MICRO-USUARIO
           predicates:
             - Path=/api/usuario/**
-        - id: MICRO-SOPORTE
-          uri: lb://MICRO-SOPORTE
+        - id: MICRO-AUD
+          uri: lb://MICRO-AUD
           predicates:
-            - Path=/api/soporte/**
+            - Path=/api/aud/**
 server:
-  port: 8094
+  port: 8091
 eureka:
   client:
     register-with-eureka: true

@@ -1,0 +1,17 @@
+server:
+  port: 8095
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/vitalvet_auditoria
+      auto-index-creation: true
+  messages:
+    basename: messages
+  application:
+    name: MICRO-AUD
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
